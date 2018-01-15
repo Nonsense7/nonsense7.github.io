@@ -1,0 +1,135 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Construction Home Page</title>
+    <link rel="stylesheet" href="construct.css" type="text/css">
+    
+<style>
+    /* needs webkits, wrapper for flex boxes, assigns caintaining elements as flex items */
+    .flex-container    {
+        display: -webkit-flex;
+        display: flex;
+        width: 100%;
+        height: 320px;
+        -webkit-justify-content: center;
+        justify-content: center;
+    }
+    /* two collumn display within flex container */
+    .flex-item  {
+        margin: 0 40px;
+        width: 245px;
+        height: 300px;
+        -webkit-align-items: baseline;
+        align-items: baseline;
+    }
+    
+    .flex-item img  {
+        text-align: center;
+    }
+    
+    main p a:link  {
+        color: #fff;
+    }
+    main p a:visited    {
+        color:  #fff;
+    }
+    main p a:hover    {
+        color:  rgb(200,0,0);
+    }
+    
+    @media only screen and (max-width: 1024px) {
+      
+    }
+    
+    @media only screen and (max-width: 768px)   {
+        
+        .flex-container {
+            display: inline-block;
+            text-align: center;
+        }
+        .flex-item  {
+            margin: 0 auto;
+        }
+        header h3  {
+            text-align: center;
+            padding: 0;
+            margin: 0;
+        }
+    }
+
+</style>
+    <!--[if lt IE 9]>
+   <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"> </script>   
+<![endif]-->
+</head>
+    
+<body>
+<div id="wrapper">
+<header>
+    <img src="images/Banner.jpg" alt="banner" width="">
+    
+    <h3>We do it right the first time, so there won't be a second time.</h3>
+    <!-- navigation -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+</header> 
+    
+<main>
+    <!-- Introduction of company and services -->
+    <h2>Welcome</h2>
+    <p>E.G. Construction provides quality work from experienced professionals. The owner has X35X years of experience in construction. Please have a look through our <a href="gallery.html">gallery</a> to see some of our finished products.</p>
+    
+    <div class="flex-container">
+        <div class="flex-item">
+            <!-- images -->
+            
+            <h3>Residential</h3>
+            
+            <img src="images/photo1.jpg" alt="photo" width="240" height="140">
+            
+            <ul>
+                <li>New Home</li>
+                <li>Renovation</li>
+                <li>Repair</li>
+            </ul>
+        </div>
+    
+        <div class="flex-item">
+            <!-- images -->
+            <h3>Commercial</h3>
+            
+            <img src="images/photo1.jpg" alt="photo" width="240" height="140">
+            
+            <ul>
+                <li>Offices</li>
+                <li>Renovation</li>
+                <li>New construction</li>
+                <li>Specialized construction needs</li>
+            </ul>
+            
+        </div>
+    </div>
+</main>
+    
+<footer>
+    <!-- footer navigation -->
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+</footer>    
+    
+</div>   
+</body>
+    
+</html>
