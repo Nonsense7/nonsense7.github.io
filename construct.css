@@ -1,0 +1,120 @@
+/*       */
+body    {
+    background-color: #7e8890;
+}
+/*Create box inside window*/
+#wrapper    {
+    width: 90%;
+    margin: 0 auto;
+}
+
+header  {
+    text-align: center;
+}
+
+header img  {
+    width: 80%;
+    height: auto;
+}
+
+header h1  {
+    text-align: center;
+}
+
+header h3   {
+    text-align: left;
+    font-style: italic; 
+    padding: 0 0 0 60px;
+}
+
+header nav  {
+    background-color: #4869b2;
+    border-radius: 8px;
+}
+
+header nav ul  {
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+}
+
+header nav ul li    {
+    display: inline-block;
+    color: rgb(0,0,0);
+    font-size: 30px;
+    padding: 0 8px;
+    text-shadow: 3px 3px 3px rgb(100, 160, 220);
+}
+
+header nav ul li a  {
+    text-decoration: none;
+}
+header ul li a:link {
+    color: #1f2531;
+}
+header ul li a:visited {
+    color:  #1f2531;
+}
+header ul li a:hover {
+    color:  #fff;
+}
+
+main    {
+    background-color: #4869b2;
+    color: #fff;
+    border: 5px solid #eeeeee;
+    border-radius: 1em;
+}
+
+main h2 {
+        text-align: center;
+        padding: 20px 0;
+        /*border-top: 4px solid rgb(102,153,255);  */
+        background: linear-gradient(to bottom, #4869b2 0%, #739fff 100%);
+}
+    
+main p   {
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;  
+}
+
+footer ul   {
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+    font-size: 90%
+}
+
+footer ul li    {
+    display: inline-block;
+    padding: 0 5px;
+}
+
+footer ul li a:link {
+    color: #000;
+}
+footer ul li a:visited {
+    color:  #000;
+}
+footer ul li a:hover {
+    color:  #fff;
+}
+/*Responsive web display for tablets */
+    @media only screen and (max-width: 1024px) {
+        #wrapper    {
+            width: 100%;
+        }
+        main    {
+            border: none;
+        }
+    }
+/*Responsive display for smartphones  */
+    @media only screen and (max-width: 768px)   {
+        
+        nav ul li   {
+            display: block;
+            width: 95%;
+            border-bottom: solid 1px #000000;
+        }
+    }

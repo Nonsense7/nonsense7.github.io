@@ -1,0 +1,208 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="construct.css" type="text/css">
+    
+    <script>
+        
+        function validateForm() {
+        if (document.forms[0].email.value == "") {
+            alert("Error: E-mail field cannot be empty.");
+            return false;
+            } //end if
+        if (document.forms[0].first.value == "") {
+            alert("Error: First Name cannot be empty.");
+            return false;
+        }// end if
+        if (document.forms[0].last.value == "") {
+            alert("Error: Last Name cannot be empty.");
+            return false;
+        }// end if
+        if (document.forms[0].phone.value == "") {
+            alert("Error: Last Name cannot be empty.");
+            return false;
+        }// end if
+        alert ("Success: Information provided is correct.");
+        return true;
+    } // end function validateForm 
+        
+    </script>
+    
+    <style>
+        
+        main    {
+            overflow: hidden;
+        }
+        /* float form to display two collumn page */
+        main form   {
+            padding: 8px;
+            border: 0;
+            margin: 0;
+            width: 50%;
+            float: left;
+            display: inline-block;
+        }
+        
+        main form ol    {
+            list-style-type: none;
+        }
+        
+        main form ol li {
+            padding: 5px;
+        }
+        /* labels float next to form input boxes */
+        label   {
+            float: left;
+            clear: left;
+	       width: 150px; 
+	       text-align: right; 
+	       padding-right: 10px;
+        }
+        
+        input   {
+            display: block;
+        }
+        
+        textarea    {
+            margin: 0 0 0 65px;
+            border-radius: .25em;
+            width: 240px;
+            height: 80px;
+        }
+        
+        h2  {
+            margin: 0 8px 8px 8px;
+        }
+        /* Div for business and contact info */
+        #direct {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            width: 45%;
+            display: inline-block;
+            text-align: center;
+        }
+        
+        #mySubmit   {
+            clear: left;
+            margin: 0 auto;
+            padding: 80px 0 0 0;*/
+        }
+        /* Media query for smartphone size, normal flow inline block */
+        @media only screen and (max-width: 768px)   {
+            main    {
+                display: block;
+            }
+            main form   {
+                float: none;
+                width: auto;
+            }
+            #direct {
+                width: 100%;
+            }
+            textarea    {
+                margin: 0;
+                width: 80%;
+                height: 80px;
+            }
+            main ol {
+                margin: 0;
+                padding: 0;
+                text-align: center;
+            }
+            main ol li  {
+                display: block;
+                text-align: center;
+            }
+            main ol li label    {
+                float: none;
+            }
+            input   {
+                margin: 0 auto;
+            }
+        }
+        
+    </style>
+</head>
+
+<body>
+<div id="wrapper">
+<header>
+    <img src="images/Banner.jpg" alt="banner">
+    <!-- navigation -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+</header> 
+    
+<main>
+    
+    <form method="post"
+         action="http://jgons77.x10host.com/Construction_Site/validate.php"
+          onsubmit="return validateForm();">
+        
+        <fieldset>
+    
+            <legend>Your Contact Information</legend>
+            
+            <p>Please provide your information and a brief description of the reason for contacting us, and one of our representatives will respond within 24 hours (on business days).</p>
+            
+            <ol>
+                <li><label for="first">First Name:</label>
+                    <input type="text" name="first" id="first"></li>
+                <li><label for="last">Last Name:</label>
+                    <input type="text" name="last" id="last"></li>
+                <li><label for="email">E-mail:</label>
+                    <input type="email" name="email" id="email"></li>
+                <li><label for="phone">Phone Number:</label>
+                    <input type="tel" name="phone" id="phone"></li>
+                <li><label>Description: <br>
+                    <textarea name="desc"></textarea></label></li>
+            </ol>
+            
+              <input id="mySubmit" type="submit" value="Submit">
+    
+        </fieldset>
+    </form>
+    
+    <div id="direct">
+        <h2>Contact Us Directly</h2>
+        
+        <h4>Business Hours</h4>
+        
+        <h5>Monday: 8:00am - 5:00pm <br>
+            Tuesday: 8:00am - 5:00pm <br>
+            Wednesday: 8:00am - 5:00pm <br>
+            Thrusday: 8:00am - 5:00pm <br>
+            Friday: 8:00am - 5:00pm</h5>
+        
+        <p>Telephone: <br>
+            Fax: <br>
+            E-mail: <br>
+            Address: </p>
+    </div>
+    
+</main>
+
+<footer>
+    <!-- footer navigation -->
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+</footer> 
+    
+</div>
+</body>
+
+</html>
