@@ -7,7 +7,7 @@ body    {
     width: 90%;
     margin: 0 auto;
 }
-
+/* Header: contains nav bar */
 header  {
     text-align: center;
 }
@@ -26,7 +26,7 @@ header h3   {
     font-style: italic; 
     padding: 0 0 0 60px;
 }
-
+/* Beginning of navbar: colors, style, alignment, text-shadow, links/pseudo clases */
 header nav  {
     background-color: #4869b2;
     border-radius: 8px;
@@ -58,7 +58,7 @@ header ul li a:visited {
 header ul li a:hover {
     color:  #fff;
 }
-
+/* Main: colors, borders, alignment... */
 main    {
     background-color: #4869b2;
     color: #fff;
@@ -78,7 +78,7 @@ main p   {
     width: 80%;
     margin: 0 auto;  
 }
-
+/* Footer: list, inline */
 footer ul   {
     list-style-type: none;
     text-align: center;
@@ -90,7 +90,7 @@ footer ul li    {
     display: inline-block;
     padding: 0 5px;
 }
-
+/* links/pseudo classes */
 footer ul li a:link {
     color: #000;
 }

@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="construct.css" type="text/css">
     
 <style>
-    /* needs webkits, wrapper for flex boxes, assigns caintaining elements as flex items */
+    /* needs webkits...
+    wrapper for flex boxes, assigns containing elements as flex items */
     .flex-container    {
         display: -webkit-flex;
         display: flex;
@@ -24,11 +25,11 @@
         -webkit-align-items: baseline;
         align-items: baseline;
     }
-    
+    /* Flex item image: center */
     .flex-item img  {
         text-align: center;
     }
-    
+    /* Embedded links psuedo classes */
     main p a:link  {
         color: #fff;
     }
@@ -38,13 +39,13 @@
     main p a:hover    {
         color:  rgb(200,0,0);
     }
-    
+    /* Begin media queries */
     @media only screen and (max-width: 1024px) {
       
     }
     
     @media only screen and (max-width: 768px)   {
-        
+    /* change flow to one collumn: in line, centered */
         .flex-container {
             display: inline-block;
             text-align: center;
