@@ -53,24 +53,42 @@
         main form ol li {
             padding: 5px;
         }
-        /* labels float next to form input boxes */
+        /*  */
         label   {
-            float: left;
-            clear: left;
-	       width: 150px; 
-	       text-align: right; 
-	       padding-right: 10px;
+            display: inline-block;
+            width: 150px;
+            text-align: right;
+            padding-right: 10px;
         }
         
         input   {
-            display: block;
+            
         }
         
         textarea    {
-            margin: 0 0 0 65px;
             border-radius: .25em;
-            width: 240px;
+            width: 280px;
             height: 80px;
+        }
+        
+        #info   {
+            
+        }
+        
+        #info p {
+            float: left;
+            width: 45%;
+            font-size: .8em;
+        }
+        
+        #info label {
+            width: 100%;
+            display: block;
+            text-align: left;
+        }
+        
+        #info input {
+            display: inline-block;
         }
         
         h2  {
@@ -88,8 +106,7 @@
         
         #mySubmit   {
             clear: left;
-            margin: 0 auto;
-            padding: 80px 0 0 0;*/
+            padding: 0;
         }
         /* Media query for smartphone size, normal flow inline block */
         @media only screen and (max-width: 768px)   {
@@ -164,14 +181,23 @@
                     <input type="email" name="email" id="email"></li>
                 <li><label for="phone">Phone Number:</label>
                     <input type="tel" name="phone" id="phone"></li>
-                <li><label>Description: <br>
-                    <textarea name="desc"></textarea></label></li>
             </ol>
             
-            <label>Please upload any photos or schematics that may assist our team to assess and quote your needs
-            <em>(optional)</em><br>
-            <input type="file" name="blueprint" size="30">
-            </label>
+        <fieldset>
+        <legend>Additional Informaiton</legend>
+            
+        <div id="info">
+            
+            <label>Description: <br>
+                    <textarea name="desc"></textarea></label>
+            
+            <p><label for="form-file">Please upload any photos or schematics that may assist our team to assess and quote your needs
+                <em>(optional)</em></label></p>
+            <input type="file" name="blueprint" id="form-file" size="30">
+                
+        </div>
+            
+        </fieldset>
             
             <input id="mySubmit" type="submit" value="Submit"> 
             
