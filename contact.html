@@ -50,8 +50,14 @@
             list-style-type: none;
         }
         
+        #topInfo    {
+            float: left;
+        }
+        
         main form ol li {
             padding: 5px;
+            text-align: center;
+            overflow: hidden;
         }
         /* labels float next to form input boxes */
         label   {
@@ -67,10 +73,28 @@
         }
         
         textarea    {
-            margin: 0 0 0 65px;
+            margin: 5px;
             border-radius: .25em;
-            width: 240px;
+            width: 360px;
             height: 80px;
+        }
+        
+        #fileSelect {
+            display: inline-block;
+        }
+        #fileSelect label {
+            float: none;
+        }
+        #fileSelect label p {
+            margin: 0;
+            width: 50%;
+            display: inline-block;
+        }
+        #fileSelect label input {
+            width: 40%;
+            display: inline-block;
+            position: relative;
+            bottom: 20px;
         }
         
         h2  {
@@ -86,10 +110,17 @@
             text-align: center;
         }
         
+        #complete   {
+            margin: 20px 0 0 0;
+            text-align: center;
+        }
         #mySubmit   {
-            clear: left;
-            margin: 0 auto;
-            padding: 80px 0 0 0;*/
+            display: inline-block;
+            margin: 0 40px;
+        }
+        #myReset    {
+            display: inline-block;
+            margin: 0 40px;
         }
         /* Media query for smartphone size, normal flow inline block */
         @media only screen and (max-width: 768px)   {
@@ -164,18 +195,25 @@
                     <input type="email" name="email" id="email"></li>
                 <li><label for="phone">Phone Number:</label>
                     <input type="tel" name="phone" id="phone"></li>
-                <li><label>Description: <br>
-                    <textarea name="desc"></textarea></label></li>
+                
+                <li><label>Description: <br></label>
+                <div id="topInfo">
+                    <textarea name="desc"></textarea></div></li>
+                
             </ol>
             
-            <label>Please upload any photos or schematics that may assist our team to assess and quote your needs
-            <em>(optional)</em><br>
-            <input type="file" name="blueprint" size="30">
-            </label>
+            <div id="fileSelect">
+                <label><p>Please upload any photos or schematics that may assist our team to assess and quote your needs
+                <em>(optional)</em></p>
+                <input type="file" name="blueprint" size="30">
+                </label>
+            </div>
             
-            <input id="mySubmit" type="submit" value="Submit"> 
+            <div id="complete">
+                <input id="mySubmit" type="submit" value="Submit"> 
             
-            <input type="reset">
+                <input id="myReset" type="reset">
+            </div>
     
         </fieldset>
     </form>
