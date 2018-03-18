@@ -28,18 +28,24 @@ header h3   {
 }
 /* Beginning of navbar: colors, style, alignment, text-shadow, links/pseudo clases */
 header nav  {
+    overflow: hidden;
     background-color: #4869b2;
     border-radius: 8px;
+    margin: 10px 0;
 }
 
 header nav ul  {
     list-style-type: none;
-    text-align: center;
     padding: 0;
+    width: 38em;
+    margin: 0 auto;
 }
 
+/* incorporate ch 17-1 exercise transitions to animate pushing button on nav bar links */
+
 header nav ul li    {
-    display: inline-block;
+    float: left;
+    text-align: center;
     color: rgb(0,0,0);
     font-size: 30px;
     padding: 0 8px;
@@ -47,19 +53,39 @@ header nav ul li    {
 }
 
 header nav ul li a  {
+    display: block;
+    margin: 10px;
+    padding: 0 4px;
+    border: 2px solid #1f2531;
+    border-radius: 8px;
     text-decoration: none;
+    position: relative;
+    -webkit-transition: all 0.3s ease-in-out 0.2s;
+    -moz-transition: all 0.3s ease-in-out 0.2s;
+    -o-transition: all 0.3s ease-in-out 0.2s;
+    -ms-transition: all 0.3s ease-in-out 0.2s;
+    transition: all 0.3s ease-in-out 0.2s;
 }
-header ul li a:link {
+header nav ul li a:link {
     color: #1f2531;
 }
-header ul li a:visited {
+header nav ul li a:visited {
     color:  #1f2531;
 }
-header ul li a:hover {
+header nav ul li a:hover {
     color:  #fff;
+    border: 2px solid #B0C4DE;
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+}
+header nav ul li a:active {
+    top: 3px;
 }
 /* Main: colors, borders, alignment... */
 main    {
+    clear: both;
     background-color: #4869b2;
     color: #fff;
     border: 5px solid #eeeeee;
@@ -69,7 +95,6 @@ main    {
 main h2 {
         text-align: center;
         padding: 20px 0;
-        /*border-top: 4px solid rgb(102,153,255);  */
         background: linear-gradient(to bottom, #4869b2 0%, #739fff 100%);
 }
     
