@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="construct.css" type="text/css">
     
 <style>
-    /* needs webkits...
+    /* Check vendor prefixes for display?....
     wrapper for flex boxes, assigns containing elements as flex items */
     .flex-container    {
         display: -webkit-flex;
@@ -15,6 +15,9 @@
         width: 100%;
         height: 320px;
         -webkit-justify-content: center;
+        -moz-justify-content: center;
+        -o-justify-content: center;
+        -ms-justify-content: center;
         justify-content: center;
     }
     /* two column display within flex container */
@@ -23,6 +26,9 @@
         width: 245px;
         height: 300px;
         -webkit-align-items: baseline;
+        -moz-align-items: baseline;
+        -o-align-items: baseline;
+        -ms-align-items: baseline;
         align-items: baseline;
     }
     .flex-item img  {
