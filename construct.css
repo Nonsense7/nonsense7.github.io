@@ -1,4 +1,4 @@
-/*       */
+/* */
 body    {
     background-color: #7e8890;
 }
@@ -94,8 +94,11 @@ main    {
 
 main h2 {
         text-align: center;
+        margin: 0 0 20px 0;
         padding: 20px 0;
-        background: linear-gradient(to bottom, #4869b2 0%, #739fff 100%);
+        border-top-left-radius: .5em;
+        border-top-right-radius: .5em;
+        background: linear-gradient(to top, #4869b2 0%, #739fff 100%);
 }
     
 main p   {
