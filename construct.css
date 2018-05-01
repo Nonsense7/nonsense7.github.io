@@ -32,6 +32,8 @@ header nav  {
     background-color: #4869b2;
     border-radius: 8px;
     margin: 10px 0;
+    padding: 5px 0;
+    height: 65px;
 }
 
 header nav ul  {
@@ -49,7 +51,8 @@ header nav ul li    {
     color: rgb(0,0,0);
     font-size: 30px;
     padding: 0 8px;
-    text-shadow: 3px 3px 3px rgb(100, 160, 220);
+    line-height: 1.5em;
+    text-shadow: 3px 3px 1.5px rgb(100, 160, 220);
 }
 
 header nav ul li a  {
@@ -140,9 +143,17 @@ footer ul li a:hover {
 /*Responsive display for smartphones  */
     @media only screen and (max-width: 768px)   {
         
+        header nav {
+            height: inherit;
+        }
+        
         nav ul li   {
             display: block;
             width: 95%;
             border-bottom: solid 1px #000000;
+        }
+        
+        header nav ul  {
+            width: auto;
         }
     }
